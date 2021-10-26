@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 求num1到num2之间所有数的累加和
+        //函数的声明
+        function getSum(num1,num2) {// function 函数名(形参1，形参2.....)  形参是接收
+            var sum = 0;
+            for (var i = num1; i <= num2; i++) {
+                sum += i;
+            }
+            console.log(sum);
+        }
+        // 函数的调用
+        getSum(1,100);//函数名(实参1，实参2....)  实参是传递
+        getSum(10,50);
+        //形参可以看作不用声明的变量
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

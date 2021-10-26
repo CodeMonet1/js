@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 简易ATM机
+        var deposit = 100;
+        var operation = prompt('请输入您想进行的业务操作');
+        switch (operation) {
+            case '存钱':
+                var access = prompt('请输入您想存入/取出的金额');
+                deposit += parseFloat(access);
+                alert('您的账户当前可用余额为' + deposit);
+                break;
+            case '取钱':
+                var access = prompt('请输入您想存入/取出的金额');
+                deposit -= parseFloat(access);
+                alert('您的账户当前可用余额为' + deposit);
+                break;
+            case '显示余额':
+                alert('您的账户当前可用余额为' + deposit);
+                break;
+            case '退出':
+                alert('感谢您的使用，祝您生活愉快');
+                break;
+            default:
+                alert('请您输入正确的操作指令');
+                break;
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

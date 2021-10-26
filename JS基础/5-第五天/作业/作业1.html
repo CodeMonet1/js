@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Computer(color,weight,brand,type) {
+            this.color = color;
+            this.weight = weight;
+            this.brand = brand;
+            this.type = type;
+            this.ftion = function(ft) {
+                console.log(ft);
+            }
+        }
+        var pc1 = new Computer('银色','1kg','外星人',1);
+        for (var k in pc1) {
+            console.log(k,pc1[k]);
+        }
+        pc1.ftion('看电影，听音乐，打游戏，敲代码');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
